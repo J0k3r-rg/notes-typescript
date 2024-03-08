@@ -1,0 +1,23 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:types" : "tsc basics/types.ts --outdir dist/ && node dist/types.js",
+    "start:interfaces" : "tsc basics/interfaces.ts --outdir dist/ && node dist/interfaces.js",
+    "start:functions" : "tsc basics/functions.ts --outdir dist/ && node dist/functions.js",
+    "start:clases" : "tsc basics/clases.ts --outdir dist/ && node dist/clases.js",
+    "start:namespace" : "tsc advanced/namespaces/namespace.ts --outdir dist/ && node dist/namespaces.js",
+    "start:custom_types" : "tsc basics/custom_types.ts --outdir dist/ && node dist/custom_types.js",
+    "start:enums" : "tsc basics/enums.ts --outdir dist/ && node dist/enums.js" ,
+    "start:namespaces" : "tsc advanced/namespaces/namespace.ts advanced/namespaces/index.ts --outFile dist/namespaces.js && node dist/namespaces.js",
+    "start:modules" : "tsc advanced/modules/index.ts --outdir dist/modules.js && node dist/modules.js",
+    "start:generics" : "tsc advanced/generics.ts --outdir dist/ && node dist/generics.js",
+    "start:mappedtypes" : "tsc advanced/mapped_types.ts --outdir dist/ && node dist/mapped_types.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
